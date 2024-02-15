@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfRegionData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RegionData>
+    <RegionId>pl</RegionId>
+    <RegionName>Poland</RegionName>
+    <RegionAlphabet>aąbсćdеęfghijklłmnńoóprsśtuwyzźżAĄBСĆDЕĘFGHIJKLŁMNŃOÓPRSŚTUWYZŹŻ</RegionAlphabet>
+  </RegionData>
+  <RegionData>
+    <RegionId>en</RegionId>
+    <RegionName>United Kingdom</RegionName>
+    <RegionAlphabet>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</RegionAlphabet>
+  </RegionData>
+  <RegionData>
+    <RegionId>ru</RegionId>
+    <RegionName>Russia</RegionName>
+    <RegionAlphabet>абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ</RegionAlphabet>
+  </RegionData>
+  <RegionData>
+    <RegionId>ja</RegionId>
+    <RegionName>Japan</RegionName>
+    <RegionAlphabet>ぁあぃいぅうぇえぉおかがきぎくぐけげこごさざじすずせぜそぞただちぢっつづてでとどなにぬねのはばぱぷまへひべぺぴびめほふもぼぶみむぽわらゃゐりやゑるゅをれゆんろょゔゎよゞゝ゜゛゚゙</RegionAlphabet>
+  </RegionData>
+  <RegionData>
+    <RegionId>cz</RegionId>
+    <RegionName>Czech</RegionName>
+    <RegionAlphabet>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZÁáČčĎďÉéĚěÍíŇňÓóŘřŠšŤťÚúŮůÝýŽž</RegionAlphabet>
+  </RegionData>
+  <RegionData>
+    <RegionId>it</RegionId>
+    <RegionName>Italy</RegionName>
+    <RegionAlphabet>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZÀÈÉÌÒÙàèéìòù</RegionAlphabet>
+  </RegionData>
+  <RegionData>
+    <RegionId>ar</RegionId>
+    <RegionName>Saudi Arabia</RegionName>
+    <RegionAlphabet>ﻼﻻﻺﻴﻵﻶﻷﻱﻰﻯﻮﻹﻸﻲﻳﻭﻬﻧﻨﻩﻪﻫﻥﻣﻢﻡﻠﻚﻛﻜﻝﻞﻟﻙﻘﻗﻖﻕﻔﻎﻏﻐﻐﺻﺺﺹﺸﺷﺱﺰﺲﺳﺴﺵﺯﺮﺭﺬﺫﺪﺤﺥﺦﺧﺨﺩﺣﺢﺡﺠﺟﺞﺘﺙﺚﺛﺜﺝﺗﺖﺑﺐﺊﺉﺎﺈﺇﺔﺏﺕﺓﺒﺍﺌﺆﺅﺄﺃﺂﺁﺀﹺﹻﹻﹼﹽﹾﹿﹹﹸﹷﹶﹴﹲۻۼ۽۾ﹰﹱ۾۽ۺ۹۸۷۶۵ۭ۰۱۲۳۴۪۬۫۩ۣۨۧۡۢۤۥۦ۠۟۞۝ۜۛەۖۗۘۙۚ۔ۓےۑېۏۉۊۋیۍێۈۇۆۅۄۃڽڿۀہۂڼڻںڹڸڷڱڲڳڴڵڶڰگڮڭڬګڥڦڧڨکڤڪڣڢڡڠڟڙښڜڛڝڞژڗږڕڔړڍڇځڎڈڂڏډڃڐڊڄڑڋڅڒڌچڀٺٴٿٹٳپٸٲٱٽٷټٶٰٻٵٯٮ٭٬٫٪٩٣٤٥٦٧٨٢١٠ﷴﷲﷺﷻٍَُِّٕٔٓهوىيًنملكقفضطظعصشسزرذتؤإئثجحخدةباآأء؟؛،؛ﻑﻒﻓﻍﻌﻋﻊﻉﻈﻂﻃﻄﻅﻆﻁﻀﺿﺿﺾﺿﺾﺽﺼﺶ</RegionAlphabet>
+  </RegionData>
+  <RegionData>
+    <RegionId>ko</RegionId>
+    <RegionName>Korea</RegionName>
+    <RegionAlphabet>ㅏㅑㅓㅕㅗㅛㅜㅠㅡㅣㅐㅒㅔㅖㅘㅙㅚㅝㅞㅟㅢ기역니은디귿리을미음ㅂ비읍시옷이응ㅈ지읒ㅊ치읓ㅋ키읔ㅌ티읕ㅍ피읖ㅎ히읗ㄲ쌍기역ㄸ쌍디귿ㅃ쌍비읍ㅆ쌍시옷ㅉ</RegionAlphabet>
+  </RegionData>
+</ArrayOfRegionData>
