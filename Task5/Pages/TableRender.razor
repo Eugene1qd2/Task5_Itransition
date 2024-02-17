@@ -1,5 +1,7 @@
 ﻿@page "/"
-@using Task5.Data  
+@using System.Text
+@using Task5.Data
+@inject IJSRuntime JS
 
 
 <PageTitle>Table</PageTitle>
@@ -26,7 +28,7 @@
             <button class="btn btn-outline-primary" @onclick="GenerateNewSeed">Shuffle</button>
         </div>
         <div class="d-flex justify-content-around align-items-center mb-2">
-            <button class="btn btn-success disabled" title="Button disable due to small budget">Export to CSV</button>
+            <button class="btn btn-success" title="Button disable due to small budget" @onclick="Export">Export to CSV</button>
         </div>
     </div>
 </nav>
@@ -47,7 +49,7 @@
             {
                 <tr>
                     <td>
-                        @(i+1)
+                        @(i + 1)
                     </td>
                     <td>
                         @personsData[i].Id
@@ -67,6 +69,16 @@
     </tbody>
     </table>
 </InfiniteScroll>
+
+<script>
+    window.triggerFileDownload = (fileName, url) => {
+      const anchorElement = document.createElement('a');
+      anchorElement.href = url;
+      anchorElement.download = fileName ?? '';
+      anchorElement.click();
+      anchorElement.remove();
+    }
+</script>
 
 @code {
 
@@ -93,7 +105,7 @@
 
     private async Task FetchPersons(int LoadAmount = 10)
     {
-        var fetchedRecords = await tControl.GetRecordsAsync(LoadAmount,ErrorsValue);
+        var fetchedRecords = await tControl.GetRecordsAsync(LoadAmount, ErrorsValue);
         personsData.AddRange(fetchedRecords);
         AlreadyLoaded += LoadAmount;
     }
@@ -129,7 +141,7 @@
     }
     private Task OnNumRangeValueChange(ChangeEventArgs e)
     {
-        RangeValue=(int)(ErrorsValue*4);
+        RangeValue = (int)(ErrorsValue * 4);
         UpdateSeedValues();
         return Task.FromResult(ErrorsValue);
     }
@@ -150,5 +162,25 @@
         }
         return Task.FromResult(e.Value);
     }
+    private async Task Export(MouseEventArgs e)
+    {
+        var fileName = "export.csv";
+        var fileURL = "export.csv";
+        using (StreamWriter file = new StreamWriter(fileName))
+        {
+            foreach (RecordData record in personsData)
+            {
+                file.WriteLine(ToCSVRow(record));
+            }
+        }
+
+        await JS.InvokeVoidAsync("triggerFileDownload", fileName, fileURL);
+    }
+
+    private String ToCSVRow(RecordData recordData)
+    {
+        return recordData.Id + " ; " + recordData.FullName + " ; " + recordData.Address + " ; " + recordData.PhoneNumber;
+    }
+
 
 }
