@@ -70,15 +70,6 @@
     </table>
 </InfiniteScroll>
 
-<script>
-    window.triggerFileDownload = (fileName, url) => {
-      const anchorElement = document.createElement('a');
-      anchorElement.href = url;
-      anchorElement.download = fileName ?? '';
-      anchorElement.click();
-      anchorElement.remove();
-    }
-</script>
 
 @code {
 
@@ -165,15 +156,14 @@
     private async Task Export(MouseEventArgs e)
     {
         var fileName = "export.csv";
-        var fileURL = "export.csv";
-        using (StreamWriter file = new StreamWriter(fileName))
+        var fileURL = "files/export.csv";
+        using (StreamWriter file = new StreamWriter("wwwroot/files/"+fileName))
         {
             foreach (RecordData record in personsData)
             {
                 file.WriteLine(ToCSVRow(record));
             }
         }
-
         await JS.InvokeVoidAsync("triggerFileDownload", fileName, fileURL);
     }
 

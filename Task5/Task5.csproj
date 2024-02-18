@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <Folder Include="RegionsData\" />
+    <Folder Include="wwwroot\files\" />
   </ItemGroup>
 
 </Project>
